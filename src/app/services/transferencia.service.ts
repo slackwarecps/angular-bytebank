@@ -18,6 +18,7 @@ export class TransferenciaService {
   }
 
   adicionar(transferencia: Transferencia) {
+    console.log('Chamou o servico...');
     this.hidratar(transferencia);
 
     return this.httpClient.post<Transferencia>(this.url, transferencia);
